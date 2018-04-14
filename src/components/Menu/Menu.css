@@ -1,0 +1,21 @@
+.Menu{
+    background-color:lightgrey;
+    display:sticky;
+    transform: translateZ(0);
+    max-width: 0vw;
+    transition: width,height, flex-grow 0.3s ease-in-out;
+}
+
+.MenuContainer{
+
+}
+
+.Menu--isOpenMobile{
+    max-width:100vw;
+    height:100vh;
+    
+}
+
+.Menu--isOpenDesktop{
+    max-width:100vw;
+}
