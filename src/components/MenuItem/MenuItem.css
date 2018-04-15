@@ -1,0 +1,33 @@
+.menuItemContainer{
+  align-self:center;
+  width:100vw;
+}
+
+.menuItemMiddle{
+  flex: 1 1 100%;
+  padding:0;
+}
+.menuItemLeft, .menuItemRight{
+}
+
+
+/* .menuItemBtm{
+height:20px;
+} */
+
+.menuItemContainer:nth-last-child(2) > div.menuItemBtm{
+  display:none;
+}
+
+
+
+.menuBtn{
+  border-radius:1px;
+  border:2px solid #333;
+  padding:0.5em 1em;
+  background-color:white;
+  color:#333;
+  box-shadow:0 0 20px #4444;
+  font-size: 20pt; 
+  align-self: center;
+}

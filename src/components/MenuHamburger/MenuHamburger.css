@@ -7,10 +7,10 @@
  */
  .hamburger {
   padding: 15px 15px 10px 15px;
-  display: inline-block;
-  position:absolute;
-  right:0;
-  top:0; 
+  position: fixed;
+
+  right:0px;
+  top:0px; 
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -21,7 +21,7 @@
   background-color: transparent;
   border: 0;
   margin: 0;
-  border:1px solid black;
+  /* border:1px solid black; */
   
   overflow: visible; }
   .hamburger:hover {

@@ -1,4 +1,9 @@
-.col{
+:root{
+  --primary:rgb(138, 255, 220) !important;
+  --blue:rgb(138, 255, 220) !important;
+}
+
+.col, .col-2{
   margin:0;
   padding:0;
 }

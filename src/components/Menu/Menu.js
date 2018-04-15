@@ -3,7 +3,7 @@ import classnames from "classnames"
 import "./Menu.css"
 
 import Hamburger from "../MenuHamburger/MenuHamburger"
-
+import MenuItem from "../MenuItem/MenuItem"
 let menuItems = ["HOME", "WORK", "ABOUT", "CONTACT"]
 
 
@@ -64,6 +64,7 @@ export default class Menu extends React.Component {
     let classes = classnames(
       'Menu',
       'col',
+      'align-items-center',
       {
         "Menu--isOpenMobile": (this.state.isOpen && this.state.isMobile),
         "Menu--isOpenDesktop":(this.state.isOpen && !this.state.isMobile),
@@ -71,12 +72,22 @@ export default class Menu extends React.Component {
 
       })
 
+
     return (
       <div className="MenuContainer row">
         <div className={classes}>
-          <div style={{display:'inline-block',float:'right'}}>Stuff</div>
+          <div className="menuSVGTop"></div>
+          <MenuItem label="HOME" action={()=>{true}} />
+          <div className="menuSVGSpacer"></div>
+          <MenuItem label="PORTFOLIO" action={()=>{true}} />
+          <div className="menuSVGSpacer"></div>
+          <MenuItem label="ABOUT" action={()=>{true}} />
+          <div className="menuSVGSpacer"></div>
+          <MenuItem label="CONTACT" action={()=>{true}} />
+          <div className="menuSVGBtm"></div>
         </div>
         <Hamburger clickCallback={this.hamburgerClickHandler.bind(this)}/>
+        <div style={{minHeight:"5000px",minWidth:"100%"}}></div>
       </div>
     )
   }
