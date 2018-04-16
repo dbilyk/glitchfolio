@@ -1,6 +1,13 @@
 :root{
   --primary:rgb(138, 255, 220) !important;
   --blue:rgb(138, 255, 220) !important;
+  --borderColor: rgb(44, 44, 44);
+  --boxShadowColor: rgba(0, 0, 0,0.2);
+
+  --fontColorMain: rgb(63, 63, 63);
+  --fontColorSub: rgb(60,60,60);
+
+  --mainFont: "Raleway", sans-serif;
 }
 
 .col, .col-2{

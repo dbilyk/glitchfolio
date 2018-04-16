@@ -22,12 +22,13 @@ height:20px;
 
 
 .menuBtn{
-  border-radius:1px;
-  border:2px solid #333;
+  border-radius:3px;
+  border:1px solid var(--borderColor);
   padding:0.5em 1em;
   background-color:white;
-  color:#333;
-  box-shadow:0 0 20px #4444;
+  color:var(--fontColorMain);
+  box-shadow:0 0 10px var(--boxShadowColor);
   font-size: 20pt; 
   align-self: center;
+  font-family:var(--mainFont);
 }

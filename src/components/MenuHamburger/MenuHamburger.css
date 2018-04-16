@@ -6,11 +6,11 @@
  * @link https://github.com/jonsuh/hamburgers
  */
  .hamburger {
-  padding: 15px 15px 10px 15px;
+  padding: 18px 15px 12px 13px;
   position: fixed;
-
-  right:0px;
-  top:0px; 
+  transform:scale(0.8, 0.8);
+  right:-9px;
+  top:-7px; 
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -18,14 +18,16 @@
   font: inherit;
   color: inherit;
   text-transform: none;
-  background-color: transparent;
+  background-color: rgb(0, 0, 0);
   border: 0;
   margin: 0;
-  /* border:1px solid black; */
+  border-left:1px solid var(--borderColor);
+  border-bottom:1px solid var(--borderColor);
+  border-radius: 0 0 0 8px;
   
   overflow: visible; }
   .hamburger:hover {
-    opacity: 0.7; }
+    opacity: 0.8; }
 
 .hamburger-box {
   width: 40px;
@@ -40,7 +42,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #000;
+    background-color: rgb(255, 227, 103);
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
